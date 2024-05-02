@@ -11,7 +11,7 @@ const LoginButton = () => {
                             prompt: "login"
                         },
                         appState: {
-                            redirectTo: "http://localhost:5173/",
+                            redirectTo: "http://localhost:5173/home",
                         }
                     })}>Log In</button>
     );

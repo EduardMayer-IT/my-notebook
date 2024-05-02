@@ -15,10 +15,10 @@ export const Auth0ProviderWithNavigate = ({ children }) => {
             domain={domain}
             clientId={clientId}
             authorizationParams={{
-                redirect_uri: redirectUri,
+                redirect_uri: redirectUri+"/login",
             }}
-            cacheLocation="memory"
-            onRedirect={redirectUri}
+            cacheLocation="localstorage"
+            onRedirect={redirectUri+"/login"}
         >
             {children}
         </Auth0Provider>

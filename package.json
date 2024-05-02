@@ -1,16 +1,20 @@
 {
-  "name": "my-notebook",
+  "name": "my-notes",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.1.3",
   "type": "module",
+  "homepage": "https://eduardmayer-it.github.io/my-notes",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@auth0/auth0-react": "^2.2.4",
+    "@heroicons/react": "^2.1.3",
     "dotenv": "^16.4.5",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
@@ -26,6 +30,7 @@
     "eslint-plugin-react": "^7.34.1",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.6",
+    "gh-pages": "^6.1.1",
     "postcss": "^8.4.38",
     "tailwindcss": "^3.4.3",
     "vite": "^5.2.0"
